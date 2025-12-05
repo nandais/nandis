@@ -13,8 +13,7 @@ cursos = [
      },
     { "id" : 3,
     "nome": "Criação de jogos",
-     "descricao": "Crie jogos e aprenda a programar."
-     }
+     "descricao": "Crie jogos e aprenda a programar."}
 ]
 
 @app.route("/")
@@ -27,8 +26,8 @@ def contato():
     return render_template("contact.html")
 
 @app.route("/curso/<int:id>")
-def curso():
-    return render_template("curso.html")
+def curso(id):
+    return render_template("curso.html", id = id)
 
     curso_selecionado = None
     

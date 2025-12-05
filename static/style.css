@@ -26,6 +26,7 @@ nav a {
     padding: 15px;
     border-radius: 8px;
 }
-.botao{
-    margin:0;
+.curso{
+    border-radius: 2px;
+    border: 10px;
 }
