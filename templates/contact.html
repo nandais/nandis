@@ -1,12 +1,22 @@
 {% extends "base.html" %}
 
-{% block title %}Contato{% endblock %}
+{% block title %}Fale Conosco{% endblock %}
 
 {% block conteudo %}
-<article class="art">
-    <h2>Contato</h2>
-    <p>Envie sua mensagem para nós.</p>
-</article>
+<h2>Fale Conosco</h2>
+
+<form method="POST">
+    <label>Nome:</label>
+    <input type="text" name="nome" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Mensagem:</label>
+    <textarea name="mensagem" required></textarea>
+
+    <button type="submit">Enviar</button>
+</form>
 {% endblock %}
 
 
