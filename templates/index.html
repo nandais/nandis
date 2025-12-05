@@ -12,6 +12,7 @@
             <h3>{{ curso.nome }}</h3>
             <p>{{ curso.descricao }}</p>
         </li>
+        <a class="botao" href="{{url_for('curso', id=curso.id)}}">Detalhes</a>
         {% endfor %}
     </ul>
 </article>
