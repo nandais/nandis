@@ -4,8 +4,18 @@
 
 {% block conteudo %}
 <article class="art">
-    <h2>Bem-vindo!</h2>
+    <h2>Cursos Disponíveis</h2>
+
+    <ul class="lista-cursos">
+        {% for curso in cursos %}
+        <li class="curso-item">
+            <h3>{{ curso.nome }}</h3>
+            <p>{{ curso.descricao }}</p>
+        </li>
+        {% endfor %}
+    </ul>
 </article>
 {% endblock %}
+
 
 
